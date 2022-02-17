@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push bharathirajatut/expense-service:latest'
+				sh 'docker push raghultamilaiah/expense-service:latest'
 			}
 		}
 	}
