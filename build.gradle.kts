@@ -50,7 +50,7 @@ task<Copy>("unpack"){
 }
 
 docker{
-	name = "expense-service"
+	name = "raghultamilaiah/expense-service"
 	copySpec.from(tasks.getByName<Copy>("unpack").outputs).into("dependency")
 	buildArgs(mapOf("DEPENDENCY" to "dependency"))
 }
