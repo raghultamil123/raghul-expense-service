@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: expense-service-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: expense-service
